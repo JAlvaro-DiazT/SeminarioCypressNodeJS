@@ -1,0 +1,26 @@
+{
+  "name": "seminariocypressnodejs",
+  "version": "1.0.0",
+  "description": "Uso del framework Cypress para automatizar y realizar pruebas en APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAlvaro-DiazT/SeminarioCypressNodeJS.git"
+  },
+  "author": "Alvaro Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAlvaro-DiazT/SeminarioCypressNodeJS/issues"
+  },
+  "homepage": "https://github.com/JAlvaro-DiazT/SeminarioCypressNodeJS#readme",
+  "devDependencies": {
+    "cypress": "^13.3.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0"
+  }
+}
