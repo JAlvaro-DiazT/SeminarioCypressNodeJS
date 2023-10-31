@@ -1,13 +1,13 @@
 class RegisterPage {
     constructor() {
-        this.registerButtonLocator = "#j_idt76";
+        this.registerButtonLocator = "#j_idt107";
         this.registerNameLocator = "#registro\\:nombre";
         this.registerUserNameLocator = "#registro\\:nombreUsuario";
         this.registerKeyLocator = "#registro\\:clave";
         this.registerRepeatKeyLocator = "#registro\\:verificacionClave";
         this.registerButtonAcceptLocator = "#registro\\:j_idt88";
         this.successMessageLocator = '.ui-growl-title:contains("Operación completada")';
-        this.errorMessageLocator = '.ui-growl-title:contains("Registro ya existente")';
+        this.errorMessageLocator = '.ui-growl-title:contains("Existing registration")';
     }
 
     clickRegister() {
@@ -32,4 +32,4 @@ class RegisterPage {
     }
 }
 
-export default RegisterPage;
+module.exports = new RegisterPage();
