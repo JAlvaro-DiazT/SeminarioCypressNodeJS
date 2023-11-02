@@ -1,6 +1,6 @@
 class RegisterPage {
     constructor() {
-        this.registerButtonLocator = "#j_idt107";
+        this.registerButtonLocator = "#j_idt76";
         this.registerNameLocator = "#registro\\:nombre";
         this.registerUserNameLocator = "#registro\\:nombreUsuario";
         this.registerKeyLocator = "#registro\\:clave";
