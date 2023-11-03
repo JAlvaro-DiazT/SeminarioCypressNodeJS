@@ -18,7 +18,3 @@ import './commands'
 import 'cypress-mochawesome-reporter/register';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-afterEach(function () {
-    // Toma capturas de pantalla después de cada escenario
-    cy.screenshot()
-});

@@ -18,5 +18,4 @@ module.exports = defineConfig({
         baseUrl: 'http://localhost:8080',
         chromeWebSecurity: false,
     },
-    screenshotsFolder: 'cypress/screenshots',
 });

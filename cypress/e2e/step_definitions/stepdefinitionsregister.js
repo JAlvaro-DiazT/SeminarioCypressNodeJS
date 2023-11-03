@@ -6,6 +6,7 @@ const _ = require('lodash');
 beforeEach( () => {
     cy.visit('/')
 });
+
 Given(/^The user is on the registration page$/, function () {
 });
 When(/^The user enters his full name "([^"]*)", username "([^"]*)" and password "([^"]*)"$/,function (name, username, password) {
@@ -24,4 +25,5 @@ Then(/^The user should then see the message "([^"]*)"$/,function (message_expect
     }else{
         registerPage.isErrorMessageVisible();
     }
+    cy.screenshot()
 });

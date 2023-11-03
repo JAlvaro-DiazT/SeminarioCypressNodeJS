@@ -4,6 +4,8 @@ const {When, Given, Then} = require("@badeball/cypress-cucumber-preprocessor");
 beforeEach( () => {
     cy.visit('/')
 });
+
+
 Given(/^The user is on the login page$/, function () {
 
 });
@@ -20,8 +22,10 @@ When(/^The user enters their username "([^"]*)" and password "([^"]*)"$/,functio
 Then(/^The user should see the Logout button and Menu button$/,function () {
     signInPage.isGoOutVisible();
     signInPage.isMenuVisible();
+    cy.screenshot()
 });
 Then(/^The user should see the fields username and key$/,function () {
     signInPage.isLabelUserVisible();
     signInPage.isLabelKeyVisible();
+    cy.screenshot()
 });
