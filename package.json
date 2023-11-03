@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "html-reporter": "cypress run --spec cypress/e2e/*.spec.cy.js --browser chrome --headed"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/JAlvaro-DiazT/SeminarioCypressNodeJS#readme",
   "devDependencies": {
-    "cypress": "^13.3.3"
+    "cypress": "^13.3.3",
+    "cypress-mochawesome-reporter": "^3.6.1"
   },
   "dependencies": {
     "@faker-js/faker": "^8.2.0"

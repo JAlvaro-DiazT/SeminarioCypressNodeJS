@@ -18,6 +18,7 @@ describe('Test de inicio de sesión', function () {
 
         signInPage.isGoOutVisible();
         signInPage.isMenuVisible();
+        cy.screenshot();
     });
 
     it('Debería salir error al intentar iniciar sesión', function () {
@@ -30,5 +31,6 @@ describe('Test de inicio de sesión', function () {
 
         signInPage.isLabelUserVisible();
         signInPage.isLabelKeyVisible();
+        cy.screenshot();
     });
 });

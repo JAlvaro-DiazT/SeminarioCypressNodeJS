@@ -16,6 +16,7 @@ describe('Test de registrar usuario', function () {
 
         registerPage.registerUser(name, username, key);
         registerPage.isSuccessMessageVisible();
+        cy.screenshot();
     });
 
     it('Debe registrar un usuario que ya existe', function () {
@@ -25,5 +26,6 @@ describe('Test de registrar usuario', function () {
 
         registerPage.registerUser(name, username, key);
         registerPage.isErrorMessageVisible();
+        cy.screenshot();
     });
 });
